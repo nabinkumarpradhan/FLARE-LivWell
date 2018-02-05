@@ -5,37 +5,6 @@ library(ggplot2)
 library(plm)
 library(ggthemes)
 
-livwell_demo <- read.csv("Demography.csv",
-                         header = TRUE,
-                         stringsAsFactors = FALSE) 
-
-livwell_income <- read.csv("Income.csv",
-                           header = TRUE,
-                           stringsAsFactors = FALSE) 
-
-livwell_wellbeing <- read.csv("Subjective-wellbeing.csv",
-                              header = TRUE,
-                              stringsAsFactors = FALSE) 
-
-livwell_education <- read.csv("Education.csv",
-                              header = TRUE,
-                              stringsAsFactors = FALSE)
-livwell_health <- read.csv("Health.csv",
-                           header = TRUE,
-                           stringsAsFactors = FALSE)
-
-livwell_asset <- read.csv("Asset.csv",
-                          header = TRUE,
-                          stringsAsFactors = FALSE)
-
-livwell_crtb <- read.csv("Crosstab.csv",
-                         header = TRUE,
-                         stringsAsFactors = FALSE)
-
-livwell_incomeexp <- read.csv("Income_Exp.csv",
-                              header = TRUE,
-                              stringsAsFactors = FALSE)
-
 options(scipen=999)
 
 #Demography variables
