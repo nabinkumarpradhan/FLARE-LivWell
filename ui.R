@@ -5,11 +5,6 @@ country <- c("Ethiopia", "Tanzania")
 
 country <- as.data.frame(country, stringsAsFactors = FALSE)
 
-
-country1 <- c("Ethiopia", "Tanzania")
-
-country1 <- as.data.frame(country, stringsAsFactors = FALSE)
-
 header <-
   shinydashboard::dashboardHeader(
     title = tags$ul(
@@ -197,13 +192,7 @@ body <- shinydashboard::dashboardBody(
                                 
                                 uiOutput("demo_predictors")
                               )
-                              
-                              # wellPanel(
-                              #   width = NULL,
-                              #   status = "success",
-                              #   actionButton("demobutton", "Download plot", icon = icon("download-alt", lib = "glyphicon"))
-                              #   
-                              # )
+
                             )
                           ))),
           
@@ -246,11 +235,7 @@ body <- shinydashboard::dashboardBody(
                                   size = NULL
                                 )
                               ),
-                              
-                              # wellPanel(width = NULL, status = "success",
-                              #
-                              #           uiOutput("choose_outcomes")
-                              # ),
+
                               wellPanel(
                                 width = NULL,
                                 status = "success",
@@ -277,22 +262,7 @@ body <- shinydashboard::dashboardBody(
           )
           
           ),
-        # tabPanel(
-        #   "Consumption",
-        #   
-        # 
-        #   
-        #   
-        #   HTML(
-        #     '<footer class="text-center"
-        #     style = "padding-top:12px; padding-bottom:12px;font-size: 16px;color:white;background-color:#27AE60;z-index: 1000;height = 50;">
-        #     <p> Copyright &copy FLARE Network
-        #     <br>FLARE Network Secretariat,School for Environment and Sustainability,University of Michigan,440 Church Street,Ann Arbor, Michigan 48109,Email: flare.network@umich.edu
-        #     </p>
-        #     </footer>'
-        #   )
-        #   
-        #   ),
+
         tabPanel(
           "Education",
           
@@ -451,14 +421,7 @@ body <- shinydashboard::dashboardBody(
                             )
                           ))),
           
-          
-          
-          
-          
-          
-          
-          
-          
+         
           HTML(
             '<footer class="text-center"
             style = "padding-top:12px; padding-bottom:12px;font-size: 16px;color:white;background-color:#27AE60;z-index: 1000;height = 50;">
